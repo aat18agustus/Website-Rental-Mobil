@@ -1,11 +1,7 @@
 <?php
 # Konek ke Web Server Lokal
-$myHost    = "localhost";
-$myUser    = "root";
-$myPass    = "";
-$myDbs    = "rental";
 
-$koneksidb = mysqli_connect($myHost, $myUser, $myPass, $myDbs);
+$koneksidb = mysqli_connect("localhost", "root", "", "rental");
 if (!$koneksidb) {
     echo "Failed Connection !";
 }
